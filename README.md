@@ -66,6 +66,8 @@ The bundle is saved locally as a compressed archive. Review its contents before 
 
 ## Open the dashboard
 
+**Live dashboard:** [View the Ubuntu Customer Success dashboard](https://aliza-beep.github.io/ubuntu-customer-success-lab/)
+
 Open `dashboard/index.html` in a browser. The dashboard supports:
 
 - health-score component inspection;
