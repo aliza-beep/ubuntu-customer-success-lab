@@ -1,0 +1,4 @@
+feedback_id,date,customer_segment,product,feedback_type,customer_context,problem,impact,evidence,requested_outcome,status,owner
+FB-001,2026-11-12,Tech-Ubuntu-Pro,Ubuntu Pro,Usability,"Administrator onboarding 25 machines in controlled waves","Fleet-level progress requires manual reconciliation across notes and tickets","Slower reporting and risk of missed exceptions","Seven machines lacked a confirmed window until the inventory was manually reviewed","A clearer fleet onboarding status view with owners and exceptions",Submitted,"Aliza - Simulated CSM"
+FB-002,2026-11-13,Tech-Ubuntu-Pro,Support process,Documentation,"First-time administrator preparing a support ticket","Uncertainty about the minimum useful diagnostic evidence","Longer ticket preparation and possible back-and-forth","Customer requested a concise evidence checklist in NST-002","A product-linked checklist organised by common issue type",Draft,"Aliza - Simulated CSM"
+

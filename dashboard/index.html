@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Interactive dashboard for a fictional Ubuntu Customer Success portfolio case study."
+    />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23e95420'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Arial' font-size='30' font-weight='700' fill='white'%3EU%3C/text%3E%3C/svg%3E" />
+    <title>Northstar Apps | Customer Success Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to dashboard</a>
+
+    <header class="site-header">
+      <div class="brand-lockup" aria-label="Ubuntu Customer Success Operations Lab">
+        <span class="brand-mark" aria-hidden="true">U</span>
+        <div>
+          <p class="eyebrow">Ubuntu Customer Success Operations Lab</p>
+          <p class="brand-title">Northstar Apps adoption workspace</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>Simulated portfolio data</span>
+        <span class="divider" aria-hidden="true"></span>
+        <span>Updated 14 Nov 2026</span>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="kicker">30-day adoption review</p>
+          <h1 id="page-title">Turn onboarding activity into visible customer value.</h1>
+          <p class="hero-summary">
+            A fictional 25-machine Ubuntu Pro adoption programme showing progress,
+            support health, risks, ownership, and the next customer outcomes.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#actions">Review next actions</a>
+            <button class="button secondary" id="simulate-progress" type="button">
+              Simulate one machine onboarded
+            </button>
+          </div>
+          <p class="simulation-note" id="simulation-note" aria-live="polite">
+            Simulation controls affect this browser session only.
+          </p>
+        </div>
+
+        <aside class="brief-card" aria-label="Customer objective">
+          <p class="eyebrow">Customer objective</p>
+          <blockquote>
+            Establish consistent security coverage and a repeatable support process
+            across 25 Ubuntu machines.
+          </blockquote>
+          <dl class="brief-details">
+            <div>
+              <dt>Segment</dt>
+              <dd>Growing software company</dd>
+            </div>
+            <div>
+              <dt>Stage</dt>
+              <dd>Phased rollout</dd>
+            </div>
+            <div>
+              <dt>CSM focus</dt>
+              <dd>Adoption and risk</dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="metric-grid" aria-label="Account summary">
+        <article class="metric-card health-card">
+          <div class="metric-heading">
+            <div>
+              <p class="eyebrow">Customer health</p>
+              <h2>Monitor</h2>
+            </div>
+            <div class="score-ring" role="img" aria-label="Health score 76 out of 100">
+              <span id="health-score">76</span>
+              <small>/100</small>
+            </div>
+          </div>
+          <p>Adoption is progressing, but the final rollout requires named owners and dates.</p>
+          <button class="text-button" type="button" data-dialog="health-dialog">
+            See score calculation <span aria-hidden="true">→</span>
+          </button>
+        </article>
+
+        <article class="metric-card">
+          <p class="eyebrow">Onboarding</p>
+          <div class="large-number"><span id="onboarded-count">18</span><small>/25</small></div>
+          <div class="progress-track" aria-label="Onboarding progress">
+            <span id="progress-bar" style="width: 72%"></span>
+          </div>
+          <div class="metric-footer">
+            <span id="progress-percent">72% complete</span>
+            <span id="remaining-count">7 remaining</span>
+          </div>
+        </article>
+
+        <article class="metric-card">
+          <p class="eyebrow">Support health</p>
+          <div class="large-number">3<small>open</small></div>
+          <div class="ticket-badges" aria-label="Ticket severity summary">
+            <span><strong>0</strong> critical</span>
+            <span><strong>2</strong> medium</span>
+            <span><strong>1</strong> low</span>
+          </div>
+          <p class="metric-caption">One additional ticket is monitoring after a fix.</p>
+        </article>
+
+        <article class="metric-card">
+          <p class="eyebrow">Next milestone</p>
+          <div class="date-block">
+            <span>25</span>
+            <small>Nov 2026</small>
+          </div>
+          <p>Complete the final rollout wave or record approved exceptions.</p>
+          <span class="owner-chip">Customer Administrator</span>
+        </article>
+      </section>
+
+      <section class="dashboard-grid">
+        <article class="panel journey-panel" aria-labelledby="journey-title">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Value journey</p>
+              <h2 id="journey-title">From kickoff to measurable adoption</h2>
+            </div>
+            <span class="status-pill monitor">In progress</span>
+          </div>
+
+          <ol class="journey-list">
+            <li class="complete">
+              <span class="journey-marker" aria-hidden="true">✓</span>
+              <div>
+                <h3>Discovery and ownership</h3>
+                <p>Business objective, administrators, inventory, and support path confirmed.</p>
+              </div>
+              <time datetime="2026-11-03">3 Nov</time>
+            </li>
+            <li class="complete">
+              <span class="journey-marker" aria-hidden="true">✓</span>
+              <div>
+                <h3>Pilot validated</h3>
+                <p>Three non-critical machines completed the agreed validation steps.</p>
+              </div>
+              <time datetime="2026-11-06">6 Nov</time>
+            </li>
+            <li class="current">
+              <span class="journey-marker" aria-hidden="true">3</span>
+              <div>
+                <h3>Controlled rollout</h3>
+                <p><span id="journey-count">18</span> machines onboarded; <span id="journey-remaining">seven</span> remain in the plan.</p>
+              </div>
+              <span class="status-pill monitor">Current</span>
+            </li>
+            <li>
+              <span class="journey-marker" aria-hidden="true">4</span>
+              <div>
+                <h3>Value review</h3>
+                <p>Confirm outcomes, exceptions, sentiment, and the next justified milestone.</p>
+              </div>
+              <time datetime="2026-11-28">28 Nov</time>
+            </li>
+          </ol>
+        </article>
+
+        <article class="panel risk-panel" aria-labelledby="risk-title">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Risk radar</p>
+              <h2 id="risk-title">What needs attention</h2>
+            </div>
+            <span class="risk-count">3 active</span>
+          </div>
+
+          <div class="risk-list">
+            <article class="risk-item high">
+              <div class="risk-topline">
+                <span class="status-pill high">High</span>
+                <span>Adoption</span>
+              </div>
+              <h3>Final <span id="risk-remaining">seven</span> machines are incomplete</h3>
+              <p id="risk-detail">Four lack named owners; three need an approved maintenance window.</p>
+              <div class="risk-meta"><span>Owner: Customer Admin</span><span>Due 20 Nov</span></div>
+            </article>
+            <article class="risk-item medium">
+              <div class="risk-topline">
+                <span class="status-pill medium">Medium</span>
+                <span>Engagement</span>
+              </div>
+              <h3>Executive value review is unconfirmed</h3>
+              <p>Without sponsor validation, technical progress may not translate into recognised value.</p>
+              <div class="risk-meta"><span>Owner: Simulated CSM</span><span>Due 18 Nov</span></div>
+            </article>
+            <article class="risk-item low">
+              <div class="risk-topline">
+                <span class="status-pill low">Low</span>
+                <span>Visibility</span>
+              </div>
+              <h3>Fleet reporting remains manual</h3>
+              <p>Structured feedback has been prepared for Product review.</p>
+              <div class="risk-meta"><span>Owner: Simulated CSM</span><span>Due 30 Nov</span></div>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="panel ticket-panel" aria-labelledby="tickets-title">
+        <div class="panel-heading ticket-heading">
+          <div>
+            <p class="eyebrow">Support coordination</p>
+            <h2 id="tickets-title">Ticket portfolio</h2>
+          </div>
+          <div class="filter-group" aria-label="Filter tickets">
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-filter="open" aria-pressed="false">Open</button>
+            <button class="filter-button" type="button" data-filter="monitoring" aria-pressed="false">Monitoring</button>
+            <button class="filter-button" type="button" data-filter="resolved" aria-pressed="false">Resolved</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Ticket</th>
+                <th scope="col">Issue and impact</th>
+                <th scope="col">Severity</th>
+                <th scope="col">Status</th>
+                <th scope="col">Owner / next action</th>
+                <th scope="col">Due</th>
+              </tr>
+            </thead>
+            <tbody id="ticket-body"></tbody>
+          </table>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>No tickets match this filter.</p>
+      </section>
+
+      <section class="dashboard-grid actions-grid" id="actions">
+        <article class="panel" aria-labelledby="actions-title">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Next best actions</p>
+              <h2 id="actions-title">Owners and evidence</h2>
+            </div>
+            <span class="status-pill neutral">5 actions</span>
+          </div>
+          <ul class="action-list">
+            <li>
+              <span class="action-number">01</span>
+              <div><strong>Assign remaining machine owners</strong><span>Infrastructure Lead · 18 Nov</span></div>
+            </li>
+            <li>
+              <span class="action-number">02</span>
+              <div><strong>Confirm scheduled update succeeded</strong><span>Support Simulation · 15 Nov</span></div>
+            </li>
+            <li>
+              <span class="action-number">03</span>
+              <div><strong>Approve final rollout window</strong><span>Customer Admin · 20 Nov</span></div>
+            </li>
+            <li>
+              <span class="action-number">04</span>
+              <div><strong>Complete final rollout or exceptions</strong><span>Customer Admin · 25 Nov</span></div>
+            </li>
+            <li>
+              <span class="action-number">05</span>
+              <div><strong>Deliver executive value review</strong><span>Simulated CSM · 28 Nov</span></div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="panel feedback-panel" aria-labelledby="feedback-title">
+          <div>
+            <p class="eyebrow">Voice of customer</p>
+            <h2 id="feedback-title">Useful feedback has context.</h2>
+            <p class="feedback-quote">
+              “Fleet-level progress requires manual reconciliation across notes and tickets.”
+            </p>
+            <dl class="feedback-details">
+              <div><dt>Impact</dt><dd>Slower reporting and risk of missed exceptions</dd></div>
+              <div><dt>Evidence</dt><dd>Seven machines lacked a confirmed window</dd></div>
+              <div><dt>Requested outcome</dt><dd>Clearer fleet status with owners and exceptions</dd></div>
+            </dl>
+          </div>
+          <span class="status-pill submitted">Submitted for review</span>
+        </article>
+      </section>
+
+      <section class="disclosure" aria-label="Portfolio disclosure">
+        <div>
+          <p class="eyebrow">Portfolio disclosure</p>
+          <h2>Built to demonstrate judgement—not invent experience.</h2>
+        </div>
+        <p>
+          All customers, metrics, tickets, and outcomes are fictional. This independent,
+          AI-assisted case study demonstrates a learning process.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Ubuntu Customer Success Operations Lab · Aliza Sharif · Independent case study</p>
+      <p>Customer data shown here is entirely fictional.</p>
+    </footer>
+
+    <dialog id="health-dialog">
+      <div class="dialog-header">
+        <div>
+          <p class="eyebrow">Transparent scoring</p>
+          <h2>Health score: 76/100</h2>
+        </div>
+        <button class="icon-button" type="button" data-close-dialog aria-label="Close dialog">×</button>
+      </div>
+      <div class="score-components">
+        <div><span>Product adoption</span><strong>22/30</strong></div>
+        <div><span>Support health</span><strong>19/25</strong></div>
+        <div><span>Engagement</span><strong>15/20</strong></div>
+        <div><span>Outcomes and value</span><strong>12/15</strong></div>
+        <div><span>Sentiment and feedback</span><strong>8/10</strong></div>
+      </div>
+      <p class="dialog-note">
+        The score is a discussion aid. A critical risk must still be escalated even when the total score looks healthy.
+      </p>
+    </dialog>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+

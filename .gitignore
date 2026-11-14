@@ -1,0 +1,8 @@
+support-information-*/
+support-information-*.tar.gz
+outputs/
+work/
+*.log
+.DS_Store
+Thumbs.db
+
