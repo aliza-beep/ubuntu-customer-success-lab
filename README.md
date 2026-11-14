@@ -2,7 +2,7 @@
 
 An independent, AI-assisted portfolio case study demonstrating how a graduate Customer Success Manager could support a fictional software company adopting Ubuntu Pro across 25 Ubuntu machines.
 
-> **Portfolio disclosure:** This is a simulated learning project created by Aliza Sharif. It is not Canonical employment, customer work, or a claim of professional administration experience. Company names, tickets, metrics, and customer data are fictional.
+> **Portfolio disclosure:** This is a simulated learning project created by Aliza Sharif. It does not represent professional employment or customer work. Company names, tickets, metrics, and customer data are fictional.
 
 ## Scenario
 
@@ -44,6 +44,30 @@ Northstar Apps is a fictional growing software company with 25 Ubuntu machines. 
 - `reports/lab-system-health-evidence.md` — sanitised evidence from Aliza's WSL lab validation.
 - `presentation/five-minute-demo.md` — portfolio presentation talk track.
 - `dashboard/` — responsive interactive customer health dashboard.
+
+## Five-minute review path
+
+For a quick portfolio review:
+
+1. Open the [live dashboard](https://aliza-beep.github.io/ubuntu-customer-success-lab/) to inspect onboarding, health, tickets, risks, actions, and feedback.
+2. Read the [monthly customer success report](reports/monthly-customer-success-report.md) for the executive narrative.
+3. Review the [onboarding guide](documentation/ubuntu-onboarding-guide.md) and [escalation matrix](documentation/escalation-matrix.md) for process design.
+4. Inspect the [health-check script](scripts/system-health-check.sh) and [sanitised lab evidence](reports/lab-system-health-evidence.md) for technical validation.
+5. Open the [role-requirement mapping](documentation/role-requirement-mapping.md) to see how each deliverable supports Customer Success responsibilities.
+
+## Personally validated evidence
+
+Aliza ran both Bash scripts in Ubuntu 26.04.1 LTS through WSL 2. The health check recorded no failed services, low memory and disk utilisation, five pending updates at the time of collection, and no attached Ubuntu Pro subscription. A diagnostic support bundle was generated and inspected locally without publishing machine-identifying information.
+
+The dashboard was tested locally and after deployment. Its responsive layout, ticket filtering, health-score explanation, and simulated onboarding control were verified. GitHub Pages serves the dashboard over HTTPS.
+
+## Scope and limitations
+
+- The environment is WSL 2, not a conventional production Ubuntu Server.
+- No real subscription, customer system, production change, or confidential data was used.
+- Product adoption, tickets, health scores, risks, feedback, and outcomes are simulated.
+- Technical scripts favour read-only evidence collection and require human review before action.
+- Generated diagnostic bundles are intentionally excluded from version control.
 
 ## Run the health check
 

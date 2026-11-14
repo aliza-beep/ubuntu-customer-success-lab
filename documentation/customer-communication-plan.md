@@ -7,7 +7,7 @@
 | Executive sponsor | Outcomes, risks, value, decisions | Monthly review | Monthly | CSM |
 | Customer administrator | Actions, evidence, technical coordination | Email/ticket/working session | Weekly during onboarding | CSM + Support |
 | Customer security lead | Coverage, exceptions, risk | Review meeting | At pilot and completion | Customer admin + CSM |
-| Canonical Support simulation | Reproducible evidence and impact | Ticket | As required | CSM coordinates |
+| Support team simulation | Reproducible evidence and impact | Ticket | As required | CSM coordinates |
 | Sales simulation | Objectives, expansion signals, relationship risk | Internal account review | Monthly | CSM |
 | Product simulation | Structured feedback and use-case context | Feedback log | Monthly | CSM |
 

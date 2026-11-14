@@ -11,7 +11,7 @@ Severity reflects customer impact and urgency, not how worried the reporter feel
 | S3 Medium | Limited impact, workaround exists, or onboarding is blocked for part of the fleet | 4 business hours | Daily | Standard Support queue and CSM |
 | S4 Low | General question, documentation improvement, or minor inconvenience | 1 business day | As milestones change | Standard queue or knowledge base |
 
-\*Targets are fictional portfolio assumptions, not Canonical service-level commitments.
+\*Targets are fictional portfolio assumptions, not vendor service-level commitments.
 
 ## Required escalation information
 

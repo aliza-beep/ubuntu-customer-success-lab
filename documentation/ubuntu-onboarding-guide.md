@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This guide defines a simulated onboarding journey for Northstar Apps, a fictional customer adopting Ubuntu Pro across 25 Ubuntu machines. The Customer Success Manager coordinates the journey; qualified customer administrators and Canonical Support perform technical actions where appropriate.
+This guide defines a simulated onboarding journey for Northstar Apps, a fictional customer adopting Ubuntu Pro across 25 Ubuntu machines. The Customer Success Manager coordinates the journey; qualified customer administrators and support specialists perform technical actions where appropriate.
 
 ## Desired customer outcomes
 
